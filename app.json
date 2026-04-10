@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "Math Champs",
+    "slug": "math-champs",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.mathchamps.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.mathchamps.app"
+    }
+  }
+}
