@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "Math Champs",
+    "slug": "math-champs",
+    "version": "1.0.0",
+    "android": {
+      "package": "com.mathchamps.app"
+    },
+    "ios": {
+      "bundleIdentifier": "com.mathchamps.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "REPLACE_WITH_YOUR_PROJECT_ID"
+      }
+    }
+  }
+}
