@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Math Champs",
-    "slug": "math-champs",
+    "slug": "maths-champs",
     "version": "1.0.0",
     "android": {
       "package": "com.mathchamps.app"
