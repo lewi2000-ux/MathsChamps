@@ -28,15 +28,17 @@ jobs:
 
       - name: Create credentials.json
         run: |
-          echo '{
+          cat > credentials.json <<EOF
+          {
             "android": {
               "keystore": {
                 "keystorePath": "android/keystores/release.keystore",
-                "keystorePassword": "'${{ secrets.ANDROID_KEYSTORE_PASSWORD }}'",
-                "keyAlias": "'${{ secrets.ANDROID_KEY_ALIAS }}'",
-                "keyPassword": "'${{ secrets.ANDROID_KEY_PASSWORD }}'"
+                "keystorePassword": "${{ secrets.ANDROID_KEYSTORE_PASSWORD }}",
+                "keyAlias": "${{ secrets.ANDROID_KEY_ALIAS }}",
+                "keyPassword": "${{ secrets.ANDROID_KEY_PASSWORD }}"
               }
             }
-          }' > credentials.json
+          }
+          EOF
 
       - run: eas build --platform android --profile preview --non-interactive --wait
