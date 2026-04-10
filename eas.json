@@ -1,5 +1,10 @@
 {
-  "cli": { "version": ">= 16.0.0" },
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  ...
+}
   "build": {
     "preview": {
       "distribution": "internal",
