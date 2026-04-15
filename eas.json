@@ -1,19 +1,22 @@
 {
-  "expo": {
-    "name": "Math Champs",
-    "slug": "maths-champs",
-    "version": "1.0.1",
-    "orientation": "portrait",
-    "userInterfaceStyle": "light",
-    "android": {
-      "package": "com.mathchamps.app"
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "preview": {
+      "distribution": "internal",
+      "credentialsSource": "local",
+      "android": {
+        "buildType": "apk",
+        "image": "latest"
+      }
     },
-    "ios": {
-      "bundleIdentifier": "com.mathchamps.app"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "1c02321a-ff53-4aa3-8f1d-fbd40774e12a"
+    "production": {
+      "credentialsSource": "local",
+      "android": {
+        "buildType": "app-bundle",
+        "image": "latest"
       }
     }
   }
