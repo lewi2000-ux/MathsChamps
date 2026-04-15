@@ -1,0 +1,9 @@
+node_modules/
+.expo/
+dist/
+android/keystores/
+credentials.json
+*.keystore
+*.jks
+.env
+package-lock.json
